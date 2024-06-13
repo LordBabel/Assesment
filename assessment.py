@@ -363,6 +363,24 @@ def custom_sql():
         print("Please enter a valid Username next time.")
 
 
+def add_data():
+    pass
+
+
+def remove_data():
+    inputremove = input("Please type the Name of the brawler you want to delete, include capitals and punctuation: ")
+    db = sqlite3.connect(DATABASE)
+    conn = db.cursor()
+    sql = "DELETE FROM Brawlers WHERE Name == "+inputremove
+    conn.execute(sql)
+    print("All done!")
+    db.close()
+
+    
+def modify_data():
+    pass
+
+
 while True:
     # variables
     checker = 0
