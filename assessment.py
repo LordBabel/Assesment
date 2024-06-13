@@ -191,9 +191,9 @@ def brawl_stardle():
                   ''')
             inputwall = input("Please enter an option: ")
             if inputwall == "1":
-                wallbreak = "Yes"
+                wallbreak = '"Yes"'
             elif inputwall == "2":
-                wallbreak = "No"
+                wallbreak = '"No"'
             else:
                 print("Please enter a valid option.")
                 checker = 0
@@ -381,7 +381,7 @@ while True:
         # checking what option was selected
         if inputs == "1":
             checker = 1
-            print("Here are some predetermined search functions. For more functionality please choose Custom SQL query.")
+            print("Here are some predetermined search functions. For more functionality please choose Brawl Stardle helper or custom search.")
             print('''
                   1. Find the highest hp brawlers
                   2. Find all the brawlers who can wallbreak
